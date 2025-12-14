@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "@hazae41/stdbob",
+  "version": "0.0.6",
+  "description": "Standard libraries for Bobine WebAssembly VM",
+  "repository": "github:hazae41/stdbob",
+  "author": "hazae41",
+  "license": "MIT",
+  "scripts": {
+    "examine": "asc --noEmit ./src/bin.ts"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.28.9"
+  }
+}
