@@ -1,7 +1,8 @@
 {
   "extends": "assemblyscript/std/assembly.json",
   "compilerOptions": {
-    "experimentalDecorators": true
+    "module": "preserve",
+    "moduleResolution": "bundler"
   },
   "include": [
     "./**/*.ts"
