@@ -27,3 +27,5 @@ And compile with `reference-types` enabled and `stub` runtime
 ```bash
 asc ./mod.ts --runtime stub --enable reference-types
 ```
+
+Then deploy the .wasm to your Bobine VM
