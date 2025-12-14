@@ -7,7 +7,7 @@ export namespace modules {
   @external("modules", "load")
   export declare function load(module: blobref): blobref
 
-  // @ts-ignore
+  // @ts-ignore: decorator
   @external("modules", "call")
   export declare function call(module: blobref, method: blobref, params: packref): packref
 
