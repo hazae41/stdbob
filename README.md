@@ -10,6 +10,8 @@ npm install @hazae41/stdbob
 
 ## Usage
 
+### AssemblyScript
+
 Just import the library from your AssemblyScript file
 
 ```tsx
@@ -18,4 +20,10 @@ import { modules, blobref } from "@hazae41/stdbob"
 export function main(): blobref {
   return modules.self()
 }
+```
+
+And compile with `reference-types` enabled and `stub` runtime 
+
+```bash
+asc ./mod.ts --runtime stub --enable reference-types
 ```
