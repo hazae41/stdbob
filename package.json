@@ -7,7 +7,7 @@
   "author": "hazae41",
   "license": "MIT",
   "scripts": {
-    "examine": "asc --noEmit ./src/bin.ts"
+    "examine": "asc --noEmit ./src/bin.ts --enable reference-types"
   },
   "devDependencies": {
     "assemblyscript": "^0.28.9"
