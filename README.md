@@ -1,6 +1,6 @@
 # stdbob
 
-Standard libraries for Bobine WebAssembly VM
+Standard libraries for [Bobine WebAssembly VM](https://github.com/hazae41/bobine)
 
 ```bash
 npm install @hazae41/stdbob
