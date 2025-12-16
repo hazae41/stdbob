@@ -7,7 +7,7 @@
   "author": "hazae41",
   "license": "MIT",
   "scripts": {
-    "examine": "asc ./src/bin.ts -o ./out/bin.wasm --runtime stub --enable reference-types"
+    "prepack": "rm -rf ./out && asc ./src/bin.ts -o ./out/bin.wasm --runtime stub --enable reference-types"
   },
   "devDependencies": {
     "assemblyscript": "^0.28.9"
