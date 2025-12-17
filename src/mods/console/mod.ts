@@ -1,9 +1,9 @@
-import { blobref } from "../blobs/mod";
+import { textref } from "../mod";
 
 export namespace console {
 
   // @ts-ignore: decorator
   @external("console", "log")
-  export declare function log(message: blobref): void
+  export declare function log(message: textref): void
 
 }
