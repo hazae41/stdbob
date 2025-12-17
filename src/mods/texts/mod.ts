@@ -4,24 +4,6 @@ export type textref = externref
 
 export namespace texts {
 
-  export function fromString(string: string): textref {
-    const utf8 = String.UTF8.encode(string)
-
-    const blob = blobs.save(utf8)
-    const text = fromUtf8(blob)
-
-    return text
-  }
-
-  export function toString(text: textref): string {
-    const blob = toUtf8(text)
-    const utf8 = blobs.load(blob)
-
-    const string = String.UTF8.decode(utf8)
-
-    return string
-  }
-
   // @ts-ignore: decorator
   @external("texts", "length")
   export declare function length(text: textref): i32
@@ -61,5 +43,23 @@ export namespace texts {
   // @ts-ignore: decorator
   @external("texts", "trim")
   export declare function trim(text: textref): textref
+
+  export function fromString(string: string): textref {
+    const utf8 = String.UTF8.encode(string)
+
+    const blob = blobs.save(utf8)
+    const text = fromUtf8(blob)
+
+    return text
+  }
+
+  export function toString(text: textref): string {
+    const blob = toUtf8(text)
+    const utf8 = blobs.load(blob)
+
+    const string = String.UTF8.decode(utf8)
+
+    return string
+  }
 
 }

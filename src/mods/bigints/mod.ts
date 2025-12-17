@@ -1,4 +1,3 @@
-import { blobref } from "../blobs/mod";
 import { textref } from "../texts/mod";
 
 export type bigintref = externref
@@ -76,14 +75,6 @@ export namespace bigints {
   // @ts-ignore: decorator
   @external("bigints", "pow")
   export declare function pow(left: bigintref, right: bigintref): bigintref
-
-  // @ts-ignore: decorator
-  @external("bigints", "encode")
-  export declare function encode(bigint: bigintref): blobref
-
-  // @ts-ignore: decorator
-  @external("bigints", "decode")
-  export declare function decode(blob: blobref): bigintref
 
   // @ts-ignore: decorator
   @external("bigints", "from_base16")
