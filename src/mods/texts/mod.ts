@@ -13,6 +13,15 @@ export namespace texts {
     return text
   }
 
+  export function into(text: textref): string {
+    const blob = toUtf8(text)
+    const utf8 = blobs.load(blob)
+
+    const string = String.UTF8.decode(utf8)
+
+    return string
+  }
+
   // @ts-ignore: decorator
   @external("texts", "length")
   export declare function length(text: textref): i32

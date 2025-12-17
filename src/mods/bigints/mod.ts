@@ -6,6 +6,14 @@ export type bigintref = externref
 export namespace bigints {
 
   // @ts-ignore: decorator
+  @external("bigints", "identity")
+  export declare function from(bigint: i64): bigintref
+
+  // @ts-ignore: decorator
+  @external("bigints", "identity")
+  export declare function into(bigint: bigintref): i64
+
+  // @ts-ignore: decorator
   @external("bigints", "zero")
   export declare function zero(): bigintref
 
