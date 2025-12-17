@@ -4,7 +4,7 @@ export type textref = externref
 
 export namespace texts {
 
-  export function from(string: string): textref {
+  export function fromString(string: string): textref {
     const utf8 = String.UTF8.encode(string)
 
     const blob = blobs.save(utf8)
@@ -13,7 +13,7 @@ export namespace texts {
     return text
   }
 
-  export function into(text: textref): string {
+  export function toString(text: textref): string {
     const blob = toUtf8(text)
     const utf8 = blobs.load(blob)
 
