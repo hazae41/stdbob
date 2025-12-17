@@ -23,7 +23,7 @@ export namespace blobs {
   export function load(blob: blobref): ArrayBuffer {
     const bytes = new Uint8Array(length(blob))
 
-    $load(blob, bytes.dataStart)
+    $load(blob, <i32>bytes.dataStart)
 
     return bytes.buffer
   }
