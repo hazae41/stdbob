@@ -15,13 +15,13 @@ export namespace blobs {
   export function save(buffer: ArrayBuffer): blobref {
     const bytes = Uint8Array.wrap(buffer)
 
-    const reference = $save(bytes.dataStart, bytes.length)
+    const reference = $save(<i32>bytes.dataStart, bytes.byteLength)
 
     return reference
   }
 
   export function load(blob: blobref): ArrayBuffer {
-    const bytes = new Uint8Array(<i32>length(blob))
+    const bytes = new Uint8Array(length(blob))
 
     $load(blob, bytes.dataStart)
 
