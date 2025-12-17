@@ -54,10 +54,10 @@ export namespace packs {
 
   // @ts-ignore: decorator: decorator
   @external("packs", "length")
-  export declare function length(pack: packref): usize
+  export declare function length(pack: packref): i32
 
   // @ts-ignore: decorator
   @external("packs", "get")
-  export declare function get<T>(pack: packref, index: usize): T
+  export declare function get<T>(pack: packref, index: i32): T
 
 }

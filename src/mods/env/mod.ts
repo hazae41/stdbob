@@ -4,7 +4,7 @@ export namespace env {
 
   // @ts-ignore: decorator
   @external("env", "mode")
-  export declare const mode: usize
+  export declare const mode: i32
 
   // @ts-ignore: decorator
   @external("env", "uuid")
