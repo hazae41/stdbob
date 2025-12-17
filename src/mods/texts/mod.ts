@@ -1,8 +1,17 @@
-import { blobref } from "../mod";
+import { blobref, blobs } from "../mod";
 
 export type textref = externref
 
 export namespace texts {
+
+  export function from(string: string): textref {
+    const utf8 = String.UTF8.encode(string)
+
+    const blob = blobs.save(utf8)
+    const text = fromUtf8(blob)
+
+    return text
+  }
 
   // @ts-ignore: decorator
   @external("texts", "length")
