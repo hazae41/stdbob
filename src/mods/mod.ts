@@ -1,4 +1,3 @@
-export * from "./address/mod";
 export * from "./bigints/mod";
 export * from "./blobs/mod";
 export * from "./console/mod";
@@ -10,4 +9,5 @@ export * from "./refs/mod";
 export * from "./sha256/mod";
 export * from "./storage/mod";
 export * from "./symbols/mod";
+export * from "./texts/mod";
 
