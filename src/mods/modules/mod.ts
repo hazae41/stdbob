@@ -9,7 +9,7 @@ export namespace modules {
 
   // @ts-ignore: decorator
   @external("modules", "call")
-  export declare function call(module: blobref, method: blobref, params: packref): packref
+  export declare function call<T>(module: blobref, method: blobref, params: packref): T
 
   // @ts-ignore: decorator
   @external("modules", "create")

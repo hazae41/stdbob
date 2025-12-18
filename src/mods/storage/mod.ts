@@ -1,13 +1,13 @@
-import { packref, textref } from "../mod";
+import { textref } from "../mod";
 
 export namespace storage {
 
   // @ts-ignore: decorator
   @external("storage", "get")
-  export declare function get(key: textref): packref;
+  export declare function get<T>(key: textref): T;
 
   // @ts-ignore: decorator
   @external("storage", "set")
-  export declare function set(key: textref, value: packref): void;
+  export declare function set<T>(key: textref, value: T): void;
 
 }
