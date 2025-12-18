@@ -1,16 +1,7 @@
-import { blobref } from "../blobs/mod";
 
 export type packref = externref
 
 export namespace packs {
-
-  // @ts-ignore: decorator
-  @external("packs", "decode")
-  export declare function decode(blob: blobref): packref
-
-  // @ts-ignore: decorator
-  @external("packs", "encode")
-  export declare function encode(pack: packref): blobref
 
   // @ts-ignore: decorator
   @external("packs", "concat")
