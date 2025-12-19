@@ -57,6 +57,10 @@ export namespace bigints {
   export declare function dec(value: bigintref): bigintref
 
   // @ts-ignore: decorator
+  @external("bigints", "neg")
+  export declare function neg(value: bigintref): bigintref
+
+  // @ts-ignore: decorator
   @external("bigints", "add")
   export declare function add(left: bigintref, right: bigintref): bigintref
 
@@ -75,6 +79,34 @@ export namespace bigints {
   // @ts-ignore: decorator
   @external("bigints", "pow")
   export declare function pow(left: bigintref, right: bigintref): bigintref
+
+  // @ts-ignore: decorator
+  @external("bigints", "mod")
+  export declare function mod(left: bigintref, right: bigintref): bigintref
+
+  // @ts-ignore: decorator
+  @external("bigints", "lt")
+  export declare function lt(left: bigintref, right: bigintref): bool
+
+  // @ts-ignore: decorator
+  @external("bigints", "lte")
+  export declare function lte(left: bigintref, right: bigintref): bool
+
+  // @ts-ignore: decorator
+  @external("bigints", "gt")
+  export declare function gt(left: bigintref, right: bigintref): bool
+
+  // @ts-ignore: decorator
+  @external("bigints", "gte")
+  export declare function gte(left: bigintref, right: bigintref): bool
+
+  // @ts-ignore: decorator
+  @external("bigints", "eq")
+  export declare function eq(left: bigintref, right: bigintref): bool
+
+  // @ts-ignore: decorator
+  @external("bigints", "neq")
+  export declare function neq(left: bigintref, right: bigintref): bool
 
   // @ts-ignore: decorator
   @external("bigints", "from_base16")
