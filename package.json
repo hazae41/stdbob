@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@hazae41/stdbob",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Standard libraries for Bobine WebAssembly VM",
   "repository": "github:hazae41/stdbob",
   "author": "hazae41",
