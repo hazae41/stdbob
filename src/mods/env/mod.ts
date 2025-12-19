@@ -1,4 +1,4 @@
-import { blobref } from "../blobs/mod";
+import { textref } from "../mod";
 
 export namespace env {
 
@@ -8,10 +8,6 @@ export namespace env {
 
   // @ts-ignore: decorator
   @external("env", "uuid")
-  export declare function uuid(): blobref
-
-  // @ts-ignore: decorator
-  @external("env", "test")
-  export declare function test(x: blobref): void
+  export declare function uuid(): textref
 
 }

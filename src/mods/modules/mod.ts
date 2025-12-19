@@ -1,22 +1,23 @@
 import { blobref } from "../blobs/mod";
 import { packref } from "../packs/mod";
+import { textref } from "../texts/mod";
 
 export namespace modules {
 
   // @ts-ignore: decorator
+  @external("modules", "self")
+  export declare function self(): textref
+
+  // @ts-ignore: decorator
   @external("modules", "load")
-  export declare function load(module: blobref): blobref
+  export declare function load(module: textref): blobref
 
   // @ts-ignore: decorator
   @external("modules", "call")
-  export declare function call<T>(module: blobref, method: blobref, params: packref): T
+  export declare function call<T>(module: textref, method: textref, params: packref): T
 
   // @ts-ignore: decorator
   @external("modules", "create")
-  export declare function create(code: blobref, salt: blobref): blobref
-
-  // @ts-ignore: decorator
-  @external("modules", "self")
-  export declare function self(): blobref
+  export declare function create(code: blobref, salt: blobref): textref
 
 }
