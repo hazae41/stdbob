@@ -1,4 +1,4 @@
-import { textref } from "../texts/mod";
+import { textref } from "../texts/mod"
 
 export type bigintref = externref
 

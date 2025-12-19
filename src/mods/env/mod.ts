@@ -1,4 +1,4 @@
-import { textref } from "../mod";
+import { textref } from "../mod"
 
 export namespace env {
 

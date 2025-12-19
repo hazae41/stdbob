@@ -1,4 +1,4 @@
-import { blobref, blobs } from "../mod";
+import { blobref, blobs } from "../mod"
 
 export type textref = externref
 
