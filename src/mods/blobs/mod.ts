@@ -64,4 +64,12 @@ export namespace blobs {
   @external("blobs", "to_base64")
   export declare function toBase64(blob: blobref): textref
 
+  // @ts-ignore: decorator
+  @external("blobs", "encode")
+  export declare function encode<T>(value: T): blobref
+
+  // @ts-ignore: decorator
+  @external("blobs", "decode")
+  export declare function decode<T>(blob: blobref): T
+
 }
