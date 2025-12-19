@@ -18,6 +18,6 @@ export namespace modules {
 
   // @ts-ignore: decorator
   @external("modules", "create")
-  export declare function create(code: blobref, salt: blobref): textref
+  export declare function create<T>(code: blobref, salt: T): textref
 
 }
