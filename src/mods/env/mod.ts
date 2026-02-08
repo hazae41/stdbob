@@ -12,6 +12,6 @@ export namespace env {
 
   // @ts-ignore: decorator
   @external("env", "panic")
-  export declare function panic<T>(): T
+  export declare function panic<T>(message: textref): T
 
 }
