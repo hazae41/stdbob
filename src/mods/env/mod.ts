@@ -10,4 +10,8 @@ export namespace env {
   @external("env", "uuid")
   export declare function uuid(): textref
 
+  // @ts-ignore: decorator
+  @external("env", "panic")
+  export declare function panic<T>(): T
+
 }
