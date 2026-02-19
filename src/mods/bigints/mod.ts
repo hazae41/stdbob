@@ -109,6 +109,14 @@ export namespace bigints {
   export declare function neq(left: bigintref, right: bigintref): bool
 
   // @ts-ignore: decorator
+  @external("bigints", "min")
+  export declare function min(left: bigintref, right: bigintref): bigintref
+
+  // @ts-ignore: decorator
+  @external("bigints", "max")
+  export declare function max(left: bigintref, right: bigintref): bigintref
+
+  // @ts-ignore: decorator
   @external("bigints", "from_base16")
   export declare function fromBase16(text: textref): bigintref
 
