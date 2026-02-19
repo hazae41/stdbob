@@ -1,4 +1,4 @@
-import { packref, textref } from "../mod";
+import { packref } from "../mod";
 
 /**
  * Persistent public key-value storage
@@ -11,7 +11,7 @@ export namespace storage {
    */
   // @ts-ignore: decorator
   @external("storage", "get")
-  export declare function get(key: textref): packref
+  export declare function get<K>(key: K): packref
 
   /**
    * Set the value associated with the given key
@@ -20,6 +20,6 @@ export namespace storage {
    */
   // @ts-ignore: decorator
   @external("storage", "set")
-  export declare function set<T>(key: textref, value: T): void
+  export declare function set<K, V>(key: K, value: V): void
 
 }
